@@ -10,7 +10,7 @@ public class MainTreeSet {
         Car car3 = new Car("bmw", 70000);
         Car car4 = new Car("kia", 40000);
 
-        Set<Car> car = new TreeSet<Car>();
+        Set<Car> car = new TreeSet<>();
         car.add(car1);
         car.add(car2);
         car.add(car3);

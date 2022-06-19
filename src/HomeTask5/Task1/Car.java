@@ -28,7 +28,7 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car anotherCar) {
-        return (this.price < anotherCar.price) ? -1 : ((this.price == anotherCar.price) ? 0 : 1);
+        return this.price - anotherCar.price;
     }
 
 

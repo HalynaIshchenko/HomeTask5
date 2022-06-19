@@ -18,7 +18,7 @@ public class MainBank {
         users.add(new User("Olena"));
         users.add(new User("Taras"));
 
-        UserServiceImpl userServiceImpl = new UserServiceImpl();
+        UserService userServiceImpl = new UserServiceImpl();
         userServiceImpl.showAllUsers(users);
         userServiceImpl.showAllAccounts(accounts);
         double taxForUser = userServiceImpl.getTax(debitAccount, userC);
