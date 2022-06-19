@@ -7,15 +7,15 @@ package HomeTask5.Task1;
 
  */
 public class Car implements Comparable<Car> {
-    private String name ;
-     private int price;
+    private String name;
+    private int price;
 
-    Car(String name, int price){
-this.name= name;
-this.price = price;
-   };
+    Car(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 
-
+    ;
 
 
     @Override
@@ -25,23 +25,10 @@ this.price = price;
                 ", price=" + price +
                 '}';
     }
- @Override
 
-
-        public int compareTo(Car anotherCar) {
-            if (this.price == anotherCar.price) {
-                return 0;
-            }
-            if (this.price > anotherCar.price) {
-                return 1;
-            }
-            else {
-                return -1;
-            }
-
-
-
-
+    @Override
+    public int compareTo(Car anotherCar) {
+        return (this.price < anotherCar.price) ? -1 : ((this.price == anotherCar.price) ? 0 : 1);
     }
 
 

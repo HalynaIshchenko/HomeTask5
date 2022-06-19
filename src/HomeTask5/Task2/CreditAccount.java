@@ -1,6 +1,6 @@
 package HomeTask5.Task2;
 
-public class CreditAccount extends Account{
+public class CreditAccount extends Account<Integer>{
 
    public CreditAccount(int id, Double sum) {
       super(id,sum);

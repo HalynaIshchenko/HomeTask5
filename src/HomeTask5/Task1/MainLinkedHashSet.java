@@ -12,7 +12,7 @@ public class MainLinkedHashSet {
         Car car3 = new Car("bmw", 70000);
         Car car4 = new Car("kia", 40000);
 
-        Set<Car> carLinkedHashSetList = new LinkedHashSet<Car>();
+        Set<Car> carLinkedHashSetList = new LinkedHashSet<>();
         carLinkedHashSetList.add(car1);
         carLinkedHashSetList.add(car2);
         carLinkedHashSetList.add(car3);
@@ -22,6 +22,10 @@ public class MainLinkedHashSet {
         for (Car i : carLinkedHashSetList) {
             System.out.println(i);
         }
+
+        ArrayList<Car> array = new ArrayList<>(carLinkedHashSetList);
+        Collections.sort(array);
+        System.out.println(array);
 
 
 
